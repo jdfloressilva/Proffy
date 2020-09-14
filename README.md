@@ -5,9 +5,9 @@ O Proffy visa conectar profissionais da educação para com possíveis novos alu
 
 ##  :camera: Preview
 
-![Página inicial da aplicação](./preview/main.jpeg)
-![Página de cadastro de professores](./docs/proffy-2.png)
-![Página de listagem de professores](./docs/proffy-3.png)
+![Página inicial da aplicação](./preview/main.jpg)
+![Página de cadastro de professores](./preview/form.png)
+![Página de listagem de professores](./preview/search.png)
 
 ## :hammer: Instalação
 
