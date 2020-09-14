@@ -1,92 +1,104 @@
-<h1 align="center">
-    <img alt="Proffy" src=".github/logo.svg" height="100px" />
-    <br>Next Level Week #2<br/>
-    Node.js | ReactJS | React Native
-</h1>
+# Proffy
+Este é um projeto desenvolvido durante a Next Level Week, realizada pela @Rocketseat durante os dias 3 a 9 de Agosto de 2020.
 
-<p align="center">
-  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/HigorSnt/proffy?style=flat-square">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/HigorSnt/proffy?style=flat-square">
-  <img alt="GitHub" src="https://img.shields.io/github/license/HigorSnt/proffy?style=flat-square"> 
-  <img alt="Made by Rocketseat" src="https://img.shields.io/badge/made%20by-Rocketseat-%237519C1?style=flat-square"><br/>
-  <a href="https://insomnia.rest/run/?label=Proffy&uri=https%3A%2F%2Fraw.githubusercontent.com%2FHigorSnt%2Fproffy%2Fmaster%2F.github%2FInsomnia.json" target="_blank"><img src="https://insomnia.rest/images/run.svg" alt="Run in Insomnia"></a>
-</p>
-<p align="center">
-  <a href="#bookmark-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#boom-como-executar">Como Executar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+O Proffy visa conectar profissionais da educação para com possíveis novos alunos. Na plataforma você pode cadastrar-se como professor ou simplesmente listar todos os profissionais disponíveis com base em um sistema de filtros (dia da semana, horário e disciplina ministrada).
 
-<p align="center">
-  <img alt="design do projeto" width="650px" src="./.github/design.png" />
-<p>
+##  :camera: Preview
 
-## :bookmark: Sobre
+![Página inicial da aplicação](./docs/proffy-1.png)
+![Página de cadastro de professores](./docs/proffy-2.png)
+![Página de listagem de professores](./docs/proffy-3.png)
 
-O **Proffy** é uma aplicação Web e Mobile feita para auxiliar na conexão entre os alunos e os professores. Logo, esta aplicação oferece aos professores a possibilidade de registrar aulas, podendo adicionar informações como a disciplina, o custo e horário e aos alunos a possibilidade de buscar pelas aulas cadastradas.
-  
-Este projeto foi idealizado pensando no **6 de agosto**, onde se comemora o **Dia Nacional dos Profissionais da Educação**.
-  
-Essa aplicação foi realizada durante a Next **Level Week #2**, projeto da [Rocketseat](https://rocketseat.com.br/).
+## :hammer: Instalação
 
-## :rocket: Tecnologias
+### Server
+Aplicação feita em Node.js e Typescript que utiliza o SQLite como banco de dados.
+Ele é indispensável para a aplicação, portanto deve ser o primeiro a entrar em funcionamento.
 
--  [Typescript](https://www.typescriptlang.org/)
--  [Node.js](https://nodejs.org/en/)
--  [ReactJS](https://reactjs.org/)
--  [React Native](http://facebook.github.io/react-native/)
--  [Expo](https://expo.io/)
--  [Express](https://expressjs.com/)
--  [axios](https://github.com/axios/axios)
+```bash
+# Navegue até a pasta server
+cd server
 
-## :boom: Como Executar
+# Para instalar todas as dependências do projeto
+npm install
 
-- ### **Pré-requisitos**
+# Para criar as tabelas no banco de dados
+npm run knex:migrate
 
-  - É **necessário** possuir o **[Node.js](https://nodejs.org/en/)** instalado no computador
-  - É **necessário** possuir o **[Git](https://git-scm.com/)** instalado e configurado no computador
-  - Também, é **preciso** ter um gerenciador de pacotes seja o **[NPM](https://www.npmjs.com/)** ou **[Yarn](https://yarnpkg.com/)**.
-  - Por fim, é **essencial** ter o **[Expo](https://expo.io/)** instalado de forma global na máquina
-
-1. Faça um clone do repositório:
-
-```sh
-  $ git clone https://github.com/HigorSnt/proffy.git
+# Para rodar a aplicação
+npm start
 ```
 
-2. Executando a Aplicação:
+**Rotas da aplicação:**
 
-```sh
-  # API
-  $ cd server
-  # Instalando as dependências do projeto.
-  $ yarn # ou npm install
-  # Configurando o banco de dados e criando as tabelas.
-  $ yarn knex:migrate # ou npm run knex:migrate
+Listagem de professores:  `GET: /classes`
 
-  # Inicie a API
-  $ yarn start # ou npm start
+Criação de professor: `POST: /classes`
 
-  # Aplicação web
-  $ cd web
-  # Instalando as dependências do projeto.
-  $ yarn # ou npm install
-  # Inicie a aplicação web
-  $ yarn start # ou npm start
+Retorna a quantidade de conexões feitas: `GET: /connections`
 
-  # Aplicação mobile
-  $ cd mobile
-  # Instalando as dependências do projeto.
-  $ yarn # ou npm install
-  # Inicie a aplicação mobile
-  $ yarn start # ou npm start
+Criação de uma conexão: `POST: /connections`
+
+------------
+
+#### Web
+Aplicação feita inteiramente em React.js e Typescript, que consome uma API REST fornecida pelo server.
+
+```bash
+# Navegue até a pasta web
+cd web
+
+# Para instalar todas as dependências do projeto
+npm install
+
+# Para rodar a aplicação
+npm start
 ```
 
+#### Mobile
+Aplicação feita inteiramente em React Native e Typescript, que consome uma API REST fornecida pelo server.
 
-## :memo: Licença
+```bash
+# Navegue até a pasta mobile
+cd mobile
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+# Para instalar todas as dependências do projeto
+npm install
 
----
-<sup>Projeto desenvolvido com a tutoria de [Diego Fernandes](https://github.com/diego3g), da [Rocketseat](rocketseat.com.br).</sup>
+# Para rodar a aplicação
+npm start
+```
+
+## :computer: Dependências de desenvolvimento
+
+**Server**
+- cors
+- express
+- knex
+- sqlite3
+- typescript
+
+**Web**
+- axios
+- react-router-dom
+- typescript
+
+**Mobile**
+- expo-google-fonts
+- react-native-community/async-storage
+- react-native-community/masked-view
+- react-navigation/bottom-tabs
+- react-navigation/native
+- react-navigation/stack
+- axios
+- expo
+- expo-font
+- react-native-gesture-handler
+- typescript
+
+
+
+
+
+
+
