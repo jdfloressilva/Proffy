@@ -1,0 +1,41 @@
+@import 'helpers/variables';
+:root{
+  font-size: 60%; /* controle das medidas rem */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh; //altura
+}
+
+body{
+  background-color: $color-background;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 500 1.6rem Poppins; // weight size family
+  color: $color-text-base;
+}
+
+#container{
+  width: 90vw;
+  max-width: 700px;
+}
+
+@media #{$mq-mobile} {
+  :root {
+    font-size: 62.5%;
+  }
+}

@@ -1,0 +1,71 @@
+.select-block label {
+  font-size: 1.4rem;
+  color: #9C98A6; }
+.select-block select {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  background: #F8F8FC;
+  border: 1px solid #E6E6F0;
+  outline: 0;
+  padding: 0 1.6rem;
+  font: 1.6rem Archivo; }
+
+.input-block {
+  position: relative; }
+  .input-block label {
+    font-size: 1.4rem;
+    color: #9C98A6; }
+  .input-block input {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: #F8F8FC;
+    border: 1px solid #E6E6F0;
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo; }
+  .input-block:focus-within::after {
+    content: "";
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: #916BEA;
+    position: absolute;
+    left: 1.6rem;
+    bottom: 0; }
+
+.textarea-block {
+  position: relative; }
+  .textarea-block textarea {
+    width: 100%;
+    height: 5.6rem;
+    margin-top: 0.8rem;
+    border-radius: 0.8rem;
+    background: #F8F8FC;
+    border: 1px solid #E6E6F0;
+    outline: 0;
+    padding: 0 1.6rem;
+    font: 1.6rem Archivo;
+    padding: 1.2rem 1.6rem;
+    height: 16rem;
+    resize: vertical; }
+  .textarea-block label {
+    font-size: 1.4rem;
+    color: #9C98A6; }
+  .textarea-block:focus-within::after {
+    content: "";
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: #916BEA;
+    position: absolute;
+    left: 1.6rem;
+    bottom: 0; }
+
+label small {
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  color: #C1BCCC; }
+
+/*# sourceMappingURL=form.css.map */

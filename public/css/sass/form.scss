@@ -1,0 +1,45 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+
+.select-block {
+  label {
+    @include style-label;
+  }
+  select {
+    @include style-form;
+  }
+}
+.input-block {
+  position: relative;
+  label {
+    @include style-label;
+  }
+  input {
+    @include style-form;
+  }
+  &:focus-within::after {
+    @include style-focus;
+  }
+}
+
+.textarea-block {
+  position: relative;
+  textarea {
+    @include style-form;
+    padding: 1.2rem 1.6rem;
+    height: 16rem;
+    resize: vertical;
+  }
+  label {
+    @include style-label;
+  }
+  &:focus-within::after {
+    @include style-focus;
+  }
+}
+
+label small {
+  font-size: 1.2rem;
+  padding-left: 1.2rem;
+  color: $color-small-info;
+}
