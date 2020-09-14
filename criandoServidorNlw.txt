@@ -1,4 +1,0 @@
-1)npm init -y   Para criar o package.json
-2)npm install express   Para baixar a biblioteca express -> vai criar o package-lock
-3)npm install nodemon
-4) colocar o script "nodemon src/server.js" para ficar monitorando as paginas
