@@ -12,7 +12,7 @@ O Proffy visa conectar profissionais da educação para com possíveis novos alu
 ## :hammer: Instalação
 
     # Clonar o repositório
-    git clone https://github.com/joaoxfernando/proffy.git
+    git clone https://github.com/jdfloressilva/Proffy.git
 
     # Acesse o diretório
     cd proffy
