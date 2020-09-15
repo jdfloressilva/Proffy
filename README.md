@@ -15,7 +15,7 @@ O Proffy visa conectar profissionais da educação para com possíveis novos alu
     git clone https://github.com/jdfloressilva/Proffy.git
 
     # Acesse o diretório
-    cd proffy
+    cd Proffy
 
     # Baixar e instalar as dependências
     npm install
