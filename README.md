@@ -6,95 +6,22 @@ O Proffy visa conectar profissionais da educação para com possíveis novos alu
 ##  :camera: Preview
 
 ![Página inicial da aplicação](./preview/main.jpg)
-![Página de cadastro de professores](./preview/form.png)
-![Página de listagem de professores](./preview/search.png)
+![Página de cadastro de professores](./preview/form.jpg)
+![Página de listagem de professores](./preview/search.jpg)
 
 ## :hammer: Instalação
-
-### Server
-Aplicação feita em Node.js e Typescript que utiliza o SQLite como banco de dados.
-Ele é indispensável para a aplicação, portanto deve ser o primeiro a entrar em funcionamento.
-
-```bash
-# Navegue até a pasta server
-cd server
-
-# Para instalar todas as dependências do projeto
-npm install
-
-# Para criar as tabelas no banco de dados
-npm run knex:migrate
-
-# Para rodar a aplicação
-npm start
-```
-
-**Rotas da aplicação:**
-
-Listagem de professores:  `GET: /classes`
-
-Criação de professor: `POST: /classes`
-
-Retorna a quantidade de conexões feitas: `GET: /connections`
-
-Criação de uma conexão: `POST: /connections`
-
-------------
-
-#### Web
-Aplicação feita inteiramente em React.js e Typescript, que consome uma API REST fornecida pelo server.
-
-```bash
-# Navegue até a pasta web
-cd web
-
-# Para instalar todas as dependências do projeto
-npm install
-
-# Para rodar a aplicação
-npm start
-```
-
-#### Mobile
-Aplicação feita inteiramente em React Native e Typescript, que consome uma API REST fornecida pelo server.
-
-```bash
-# Navegue até a pasta mobile
-cd mobile
-
-# Para instalar todas as dependências do projeto
-npm install
-
-# Para rodar a aplicação
-npm start
-```
 
 ## :computer: Dependências de desenvolvimento
 
 **Server**
-- cors
-- express
-- knex
+- javascript
 - sqlite3
-- typescript
 
 **Web**
-- axios
-- react-router-dom
-- typescript
+- HTML
+- CSS
+- SASS
 
-**Mobile**
-- expo-google-fonts
-- react-native-community/async-storage
-- react-native-community/masked-view
-- react-navigation/bottom-tabs
-- react-navigation/native
-- react-navigation/stack
-- axios
-- expo
-- expo-font
-- react-native-gesture-handler
-- typescript
 
 
 
