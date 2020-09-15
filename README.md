@@ -11,6 +11,21 @@ O Proffy visa conectar profissionais da educação para com possíveis novos alu
 
 ## :hammer: Instalação
 
+    # Clonar o repositório
+    git clone https://github.com/joaoxfernando/proffy.git
+
+    # Acesse o diretório
+    cd proffy
+
+    # Baixar e instalar as dependências
+    npm install
+
+    # Iniciar o servidor
+    npm run dev
+
+    # Acessar
+    Abra seu navegador e acesse o endereço http://localhost:5000/
+
 ## :computer: Dependências de desenvolvimento
 
 **Server**
@@ -23,7 +38,9 @@ O Proffy visa conectar profissionais da educação para com possíveis novos alu
 - SASS
 
 
-
+## Contato
+Para me localizar ou entrar em contato comigo:<br>
+[![Linkedin Badge](https://img.shields.io/badge/-LinkedIn-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/jdfloressilva/)](https://www.linkedin.com/in/jdfloressilva)<br>[![Hotmail Badge](https://img.shields.io/badge/-Hotmail-0078D4?style=flat-square&logo=microsoft-outlook&logoColor=white&link=mailto:jdfloressilva@hotmail.com)](mailto:jdfloressilva@hotmail.com)<br>
 
 
 
